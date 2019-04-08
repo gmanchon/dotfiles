@@ -47,5 +47,5 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = gmanchon@gmail.com
+	email = gmancho@gmail.com
 	name = Gaetan Manchon
