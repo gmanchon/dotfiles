@@ -9,6 +9,7 @@
 		"A File Icon",
 		"AdvancedNewFile",
 		"All Autocomplete",
+		"Anaconda",
 		"Babel",
 		"Emmet",
 		"ERB Snippets",
@@ -17,8 +18,10 @@
 		"Latest Migration",
 		"MagicPython",
 		"Package Control",
+		"Python 3",
 		"SCSS",
 		"SublimeLinter",
+		"SublimeLinter-flake8",
 		"SublimeLinter-rubocop"
 	]
 }

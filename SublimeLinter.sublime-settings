@@ -1,10 +1,18 @@
 {
   "paths": {
     "linux": [
-      "~/.rbenv/shims"
+      "~/.rbenv/shims",
+      "~/.pyenv/shims"
     ],
     "osx": [
-      "~/.rbenv/shims"
-    ]
-  }
+      "~/.rbenv/shims",
+      "~/.pyenv/shims"
+    ],
+    "linters": {
+      "pylint": {
+        "disable": false
+      }
+    }
+  },
+  "debug": true
 }
