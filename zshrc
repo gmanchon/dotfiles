@@ -28,6 +28,8 @@ type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Anaconda binaries (python, pip, conda, jupyter, pytest, pylint etc.)
 # export PATH="/anaconda3/bin:${HOME}/anaconda3/bin:${PATH}"
 
@@ -68,6 +70,9 @@ export PATH="${PATH}:/Applications/Visual Studio Code.app/Contents/Resources/app
 
 # 2020-12-25 pipx path added by pipx ensurepath
 export PATH="$PATH:/Users/gmanchon/.local/bin"
+
+# 2021-01-18 olist
+# export PYTHONPATH="/Users/gmanchon/code/wagon-red/data-solutions/04-Decision-Science:$PYTHONPATH"
 
 # windows setup
 if command -v sw_vers &>/dev/null; then
