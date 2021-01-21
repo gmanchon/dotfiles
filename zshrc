@@ -76,9 +76,9 @@ export PATH="$PATH:/Users/gmanchon/.local/bin"
 
 # windows setup
 if command -v sw_vers &>/dev/null; then
-    echo "mac setup"
+    # echo "mac setup"
 else
-    echo "ubuntu setup"
+    # echo "ubuntu setup"
 
     export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
