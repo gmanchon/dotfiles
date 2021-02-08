@@ -87,16 +87,16 @@ if command -v sw_vers &>/dev/null; then
 
     if [ "${arch_name}" = "x86_64" ]; then
         if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
-            echo "Running on Rosetta 2"
+            # echo "Running on Rosetta 2"
 
             export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
         else
-            echo "Running on native Intel"
+            # echo "Running on native Intel"
         fi
     elif [ "${arch_name}" = "arm64" ]; then
-        echo "Running on ARM"
+        # echo "Running on ARM"
     else
-        echo "Unknown architecture: ${arch_name}"
+        # echo "Unknown architecture: ${arch_name}"
     fi
 
 else
