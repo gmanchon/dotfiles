@@ -77,6 +77,15 @@ export PATH="$PATH:/Users/gmanchon/.local/bin"
 # windows setup
 if command -v sw_vers &>/dev/null; then
     # echo "mac setup"
+
+    if [[ `uname -m` == 'arm64' ]]; then
+
+      # echo "apple silicon"
+      export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+    else
+
+      # echo "intel processor"
+    fi
 else
     # echo "ubuntu setup"
 
