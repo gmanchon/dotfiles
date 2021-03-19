@@ -7,3 +7,5 @@ if has("multi_byte")
 else
   echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
 endif
+
+set nu rnu
