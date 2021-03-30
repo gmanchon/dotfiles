@@ -30,6 +30,10 @@
   lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
   lt = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%ci) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
 
+  # personal commits
+  lgm = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset --author="Gae*"'
+  ltm = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%ci) %C(bold blue)%an%Creset %C(yellow)%d%Creset --author="Gae*"'
+
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
