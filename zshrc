@@ -79,6 +79,16 @@ export PATH="$PATH:/Users/gmanchon/.local/bin"
 # 2021-01-18 olist
 # export PYTHONPATH="/Users/gmanchon/code/wagon-red/data-solutions/04-Decision-Science:$PYTHONPATH"
 
+# 2021-04-09
+alias nbc="nbcleanmeta $@"
+alias cha="challengify $@"
+
+# 2021-03-30 z
+. $(brew --prefix)/etc/profile.d/z.sh
+
+# 2021-04-12 setup from https://github.com/lewagon/data-lectures/wiki/How-to-set-up-a-lecture-edition-environment
+jnbconvert() { ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --post serve --TemplateExporter.extra_template_basedirs=../templates --template=kitt; }
+
 # windows setup
 if command -v sw_vers &>/dev/null; then
     # echo "mac setup"
