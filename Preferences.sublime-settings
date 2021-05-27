@@ -24,7 +24,7 @@
 	],
 	"font_size": 14,
 	"highlight_modified_tabs": true,
-	"hot_exit": false,
+	"hot_exit": true,
 	"ignored_packages":
 	[
 		"Python",
@@ -36,12 +36,11 @@
 	[
 		80
 	],
-	"tab_size": 2,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
 	"use_tab_stops": true,
-	"word_wrap": false
+	"word_wrap": false,
 }
