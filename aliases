@@ -1,6 +1,6 @@
 
-alias treeee="tree -a -I .git -L 2"
-
+# 2021-05-27 GM
+alias treee="tree -a -I \".git|__pycache__\""
 
 # Get External IP / local IPs
 alias ip="curl ipinfo.io/ip"
