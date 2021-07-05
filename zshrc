@@ -179,3 +179,6 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# 2021-05-31 node
+export PATH="/usr/local/bin:$PATH"
