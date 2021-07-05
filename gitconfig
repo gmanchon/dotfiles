@@ -27,6 +27,8 @@
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
   sweepu = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune upstream
   sweepd = !git branch --merged data-eng-v3 | grep -v 'data-eng-v3$' | xargs git branch -d && git remote prune upstream
+  sweepi = !git branch --merged main | grep -v 'main$' | xargs git branch -d && git remote prune origin
+  sweepui = !git branch --merged main | grep -v 'main$' | xargs git branch -d && git remote prune upstream
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
   lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
