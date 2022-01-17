@@ -77,3 +77,7 @@ export BUNDLER_EDITOR=code
 
 # 2021-08-09 GM
 . ~/.zshrc_own
+
+# slide edition nbconvert
+jnbconvert() { ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --post serve --TemplateExporter.extra_template_basedirs=../templates --template=kitt }
+jnbconvert2() { ls *.ipynb | entr -r jupyter nbconvert "$1" --to slides --post serve --TemplateExporter.template_path="['../templates']" --template=kitt }
