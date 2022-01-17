@@ -14,7 +14,7 @@
     "editor.snippetSuggestions": "top",
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
-    "editor.fontSize": 17,
+    "editor.fontSize": 12,
     "editor.scrollBeyondLastLine": true,
     "editor.showFoldingControls": "always",
     "emmet.includeLanguages":
@@ -62,19 +62,24 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
+    "git.enabled": true,
+    "python.pythonPath": "~/.pyenv/shims/python",
+    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+    "python.terminal.activateEnvironment": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "[python]":
     {
         "editor.tabSize": 4
     },
-    "python.pythonPath": "~/.pyenv/shims/python",
     "python.formatting.provider": "yapf",
     "ruby.lint":
     {
         "rubocop": true
     },
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Default Light+"
+    "workbench.colorTheme": "Default Light+",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.wordWrap": "off",
+    "window.zoomLevel": 1
 }
