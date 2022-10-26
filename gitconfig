@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = gmanchon@gmail.com
+	name = Gaëtan Manchon
